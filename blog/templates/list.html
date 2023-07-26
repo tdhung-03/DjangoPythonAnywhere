@@ -13,6 +13,7 @@
 <h1>Welcome to my blog</h1>
 {% for post in posts %}
 <a href="{% url 'post' post.id %}"><h1>{{post}}</h1></a>
+<p><i>{{post.created}}</i></p>
 <p>{{post.desc}}</p>
 <hr>
 {% endfor %}
